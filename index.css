@@ -1,0 +1,29 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(234, 234, 234);
+}
+
+.btnWrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 500px;
+  flex-direction: row;
+}
+
+button {
+  margin: 0 auto;
+  padding: 15px 0;
+  min-width: 150px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: sans-serif;
+  background-color: #ffd400;
+}
