@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 15px;
+}
+
+.header {
+  height: 60px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+img {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.menuContainer {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(3, minmax(150px, auto));
+  grid-template-rows: repeat(3, minmax(150px, auto));
+  gap: 10px;
+}
+
+.menuContainer > div {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  box-shadow: 1px 1px 1px 1px gray;
+  cursor: pointer;
+}
+
+.menuContainer div:nth-child(1) {
+  background-image: url('../sample_imgs/더블쿼터파운더세트_10400.jpeg');
+}
+.menuContainer div:nth-child(2) {
+  background-image: url('../sample_imgs/맥크리스피디럭스세트_9200.jpeg');
+}
+.menuContainer div:nth-child(3) {
+  background-image: url('../sample_imgs/빅백베이컨_7200.jpeg');
+}
+.menuContainer div:nth-child(4) {
+  background-image: url('../sample_imgs/빅맥베이컨_7200.jpeg');
+}
+.menuContainer div:nth-child(5) {
+  background-image: url('../sample_imgs/소시지스낵랩_3900.jpeg');
+}
+.menuContainer div:nth-child(6) {
+  background-image: url('../sample_imgs/슈슈버거_5900.jpeg');
+}
+.menuContainer div:nth-child(7) {
+  background-image: url('../sample_imgs/진도대파크로켓_10200.jpeg');
+}
+.menuContainer div:nth-child(8) {
+  background-image: url('../sample_imgs/트리플치즈버거라지_9200.jpeg');
+}
+.menuContainer div:nth-child(9) {
+  background-image: url('../sample_imgs/맥크리스피세트_9900.jpeg');
+}
+
+.orderContainer {
+  box-sizing: border-box;
+  background-color: white;
+  min-width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 20px;
+  margin: 0 50px;
+}
+
+.orderTable {
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  grid-template-rows: repeat(2, minmax(35px, auto));
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tableItem {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteBtn {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btnsBox {
+  display: flex;
+}
+
+.btnsBox button {
+  margin: 0 auto;
+  padding: 10px 0;
+  min-width: 90px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.orderBtn {
+  background-color: #ffd400;
+}
+
+.cancleBtn {
+  background-color: #c1c0be;
+}

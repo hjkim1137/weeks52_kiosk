@@ -1,26 +1,49 @@
-<!-- 상품목록 페이지 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>상품 목록</title>
-    <link rel="stylesheet" href="order.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/order.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="gridContainer">
-        <div><img src="./sample_imgs/더블쿼터파운더세트_10400.jpeg" /></div>
-        <div><img src="./sample_imgs/맥크리스피디럭스세트_9200.jpeg" /></div>
-        <div><img src="./sample_imgs/맥크리스피세트_9900.jpeg" /></div>
-        <div><img src="./sample_imgs/빅맥베이컨_7200.jpeg" /></div>
-        <div><img src="./sample_imgs/소시지스낵랩_3900.jpeg" /></div>
-        <div><img src="./sample_imgs/진도대파크로켓_10200.jpeg" /></div>
-        <div><img src="./sample_imgs/슈슈버거_5900.jpeg" /></div>
-        <div><img src="./sample_imgs/트리플치즈버거라지_9200.jpeg" /></div>
-        <div><img src="./sample_imgs/빅백베이컨_7200.jpeg" /></div>
-      </div>
+      <header class="header">
+        <a href=""
+          ><img src="./sample_imgs/macdonalds.jpeg" alt="맥도날드"
+        /></a>
+      </header>
+      <main class="main">
+        <section class="menuContainer">
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+        </section>
+        <section class="orderContainer">
+          <h4 class="selected">주문 내역</h4>
+          <div class="orderTable">
+            <div class="tableItem"><strong>메뉴</strong></div>
+            <div class="tableItem"><strong>수량</strong></div>
+            <div class="tableItem"><strong>가격</strong></div>
+            <div class="tableItem"><strong>삭제</strong></div>
+            <div class="tableItem">1955버거세트</div>
+            <div class="tableItem">1</div>
+            <div class="tableItem">7,500</div>
+            <div class="tableItem"><button class="deleteBtn">x</button></div>
+          </div>
+          <div class="orderDetail"></div>
+          <div class="btnsBox">
+            <button type="button" class="orderBtn">주문하기</button>
+            <button type="button" class="cancleBtn">초기화 하기</button>
+          </div>
+        </section>
+      </main>
     </div>
-    <script type="text/javascript" src="order.js"></script>
   </body>
 </html>
