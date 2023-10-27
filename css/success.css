@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(234, 234, 234);
+}
+
+.main {
+  display: grid;
+  place-items: center;
+
+  max-width: 250px;
+  min-height: 250px;
+  margin: 0 auto;
+
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 20px;
+}
+
+.number {
+  color: rgb(190, 2, 2);
+}
+
+.toHome {
+  padding: 10px 0;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #ffd400;
+}
