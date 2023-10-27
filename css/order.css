@@ -73,7 +73,7 @@ img {
 .orderContainer {
   box-sizing: border-box;
   background-color: white;
-  min-width: 300px;
+  min-width: 350px;
   height: 350px;
   border-radius: 10px;
   border: none;
@@ -87,7 +87,6 @@ img {
   grid-template-columns: 40% 20% 20% 20%;
   grid-template-rows: repeat(2, minmax(35px, auto));
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .tableItem {
@@ -95,12 +94,16 @@ img {
   border-bottom: 1px solid lightgray;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.deleteBtn {
+.deleteBtn,
+.plusBtn,
+.minusBtn {
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
+  margin: 0 3px;
 }
 
 .btnsBox {
@@ -122,6 +125,6 @@ img {
   background-color: #ffd400;
 }
 
-.cancleBtn {
+.resetBtn {
   background-color: #c1c0be;
 }

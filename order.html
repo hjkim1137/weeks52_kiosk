@@ -15,35 +15,42 @@
       </header>
       <main class="main">
         <section class="menuContainer">
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
-          <div class="menu"></div>
+          <div class="menu" id="1"></div>
+          <div class="menu" id="2"></div>
+          <div class="menu" id="3"></div>
+          <div class="menu" id="4"></div>
+          <div class="menu" id="5"></div>
+          <div class="menu" id="6"></div>
+          <div class="menu" id="7"></div>
+          <div class="menu" id="8"></div>
+          <div class="menu" id="9"></div>
         </section>
         <section class="orderContainer">
           <h4 class="selected">주문 내역</h4>
           <div class="orderTable">
             <div class="tableItem"><strong>메뉴</strong></div>
-            <div class="tableItem"><strong>수량</strong></div>
+            <div class="tableItem">
+              <strong>수량</strong>
+            </div>
             <div class="tableItem"><strong>가격</strong></div>
             <div class="tableItem"><strong>삭제</strong></div>
             <div class="tableItem">1955버거세트</div>
-            <div class="tableItem">1</div>
-            <div class="tableItem">7,500</div>
+            <div class="tableItem">
+              <button class="minusBtn">-</button>
+              <div class="number">1</div>
+              <button class="plusBtn">+</button>
+            </div>
+            <div class="tableItem" id="price">7500</div>
             <div class="tableItem"><button class="deleteBtn">x</button></div>
           </div>
-          <div class="orderDetail"></div>
+
           <div class="btnsBox">
             <button type="button" class="orderBtn">주문하기</button>
-            <button type="button" class="cancleBtn">초기화 하기</button>
+            <button type="button" class="resetBtn">초기화 하기</button>
           </div>
         </section>
       </main>
     </div>
+    <script type="text/javascript" src="./js/order.js"></script>
   </body>
 </html>
