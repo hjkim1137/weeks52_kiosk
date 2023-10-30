@@ -92,75 +92,75 @@ main {
 /* 버거세트 */
 #setGroup > div:nth-child(1) {
   background-size: 100%;
-  background-image: url('/sample_imgs/더블쿼터파운더세트_10400.jpeg');
+  background-image: url('/sample_imgs/set-doubleqt.jpeg');
 }
 #setGroup > div:nth-child(2) {
   background-size: 100%;
-  background-image: url('/sample_imgs/맥크리스피디럭스세트_9200.jpeg');
+  background-image: url('/sample_imgs/set-crispy.jpeg');
 }
 #setGroup > div:nth-child(3) {
   background-size: 100%;
-  background-image: url('/sample_imgs/진도대파크로켓_10200.jpeg');
+  background-image: url('/sample_imgs/set-daepa.jpeg');
 }
 #setGroup > div:nth-child(4) {
   background-size: 100%;
-  background-image: url('/sample_imgs/트리플치즈버거라지_9200.jpeg');
+  background-image: url('/sample_imgs/set-cheeselg.jpeg');
 }
 #setGroup > div:nth-child(5) {
   background-size: 100%;
-  background-image: url('/sample_imgs/맥크리스피세트_9900.jpeg');
+  background-image: url('/sample_imgs/set-crispy-lg.jpeg');
 }
 
 /* 버거싱글 */
 #singleGroup > div:nth-child(1) {
   background-size: 100%;
-  background-image: url('/sample_imgs/빅맥베이컨_7200.jpeg');
+  background-image: url('/sample_imgs/single-bacon.jpeg');
 }
 #singleGroup > div:nth-child(2) {
   background-size: 100%;
-  background-image: url('/sample_imgs/1955버거.png');
+  background-image: url('/sample_imgs/single-1955.png');
 }
 #singleGroup > div:nth-child(3) {
   background-size: 100%;
-  background-image: url('/sample_imgs/슈슈버거_5900.jpeg');
+  background-image: url('/sample_imgs/single-shrimp.jpeg');
 }
 
 /* 스낵&사이드 */
 #snackGroup > div:nth-child(1) {
   background-size: 100%;
-  background-image: url('/sample_imgs/소시지스낵랩_3900.jpeg');
+  background-image: url('/sample_imgs/snack-lab.jpeg');
 }
 #snackGroup > div:nth-child(2) {
   background-size: 100%;
-  background-image: url('/sample_imgs/코울슬로_2700.jpeg');
+  background-image: url('/sample_imgs/snack-coslo.jpeg');
 }
 #snackGroup > div:nth-child(3) {
   background-size: 100%;
-  background-image: url('/sample_imgs/골든모짜렐라치즈2조각_3300.jpeg');
+  background-image: url('/sample_imgs/snack-cheese.jpeg');
 }
 #snackGroup > div:nth-child(4) {
   background-size: 100%;
-  background-image: url('/sample_imgs/핫케익2조각_3600.jpeg');
+  background-image: url('/sample_imgs/snack-hotcake.jpeg');
 }
 #snackGroup > div:nth-child(5) {
   background-size: 100%;
-  background-image: url('/sample_imgs/해쉬브라운_2100.jpeg');
+  background-image: url('/sample_imgs/snack-hashbrown.jpeg');
 }
 
 /* 음료 */
 #beverageGroup > div:nth-child(1) {
-  background-size: 100%;
-  background-image: url('/sample_imgs/맥플러리딸기.webp');
+  background-size: 70%;
+  background-position: 25px;
+  background-image: url('/sample_imgs/beverage-strawberry.webp');
 }
 #beverageGroup > div:nth-child(2) {
-  background-size: 80%;
+  background-size: 70%;
   background-position: 25px;
-  background-image: url('/sample_imgs/오레오.webp');
+  background-image: url('/sample_imgs/beverage-oreo.webp');
 }
 #beverageGroup > div:nth-child(3) {
-  background-size: 80%;
-  background-position: 25px;
-  background-image: url('/sample_imgs/맥카페.png');
+  background-size: 100%;
+  background-image: url('/sample_imgs/snack-maccafe.png');
 }
 
 /* 주문 컨테이너 */
