@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabGroup {
+  cursor: pointer;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tabGroup > div {
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.tabGroup > div:hover {
+  background-color: rgb(192, 12, 12);
+}
+
+.tab {
+  background-color: white;
+  color: black;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.contentGroup {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 800px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}

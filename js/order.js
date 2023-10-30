@@ -5,29 +5,6 @@ let reset = document.querySelector('.resetBtn');
 let orderBtn = document.querySelector('.orderBtn');
 let initialPrice = document.getElementById('price');
 
-// fetch menu
-async function fetchMenu() {
-  try {
-    const res = await fetch('http://localhost:9999/menu');
-    let data = await res.json();
-    // promise 뒤에 await 꼭 해줘야 함!!! 안그러면 pending 상태 promise 객체 반환되어 정확한 결과 얻기 어려움
-    console.log('data', data);
-    return data;
-  } catch (err) {
-    console.log('err', err);
-  }
-}
-
-// choose menu
-// fetchMenu API 호출은 여기서 함
-async function addtoList() {
-  let menuList = await fetchMenu();
-  for (let i in menuList) {
-    let singleMenu = menuList[i]; // 메뉴 정보 모음
-    console.log('menu', singleMenu);
-  }
-}
-
 // order process
 // 변화하는 상태값에 대한 정의
 let count = Number(number.textContent);
