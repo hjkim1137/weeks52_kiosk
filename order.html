@@ -7,49 +7,68 @@
     <link rel="stylesheet" href="./css/order.css" />
   </head>
   <body>
+    <header class="header">
+      <a href=""><img src="./sample_imgs/macdonalds.jpeg" alt="맥도날드" /></a>
+    </header>
     <div class="wrapper">
-      <header class="header">
-        <a href=""
-          ><img src="./sample_imgs/macdonalds.jpeg" alt="맥도날드"
-        /></a>
-      </header>
-      <main class="main">
-        <section class="menuContainer">
-          <div class="menu" id="1"></div>
-          <div class="menu" id="2"></div>
-          <div class="menu" id="3"></div>
-          <div class="menu" id="4"></div>
-          <div class="menu" id="5"></div>
-          <div class="menu" id="6"></div>
-          <div class="menu" id="7"></div>
-          <div class="menu" id="8"></div>
-          <div class="menu" id="9"></div>
-        </section>
-        <section class="orderContainer">
-          <h4 class="selected">주문 내역</h4>
-          <div class="orderTable">
-            <div class="tableItem"><strong>메뉴</strong></div>
-            <div class="tableItem">
-              <strong>수량</strong>
-            </div>
-            <div class="tableItem"><strong>가격</strong></div>
-            <div class="tableItem"><strong>삭제</strong></div>
-            <div class="tableItem">1955버거세트</div>
-            <div class="tableItem">
-              <button class="minusBtn">-</button>
-              <div class="number">1</div>
-              <button class="plusBtn">+</button>
-            </div>
-            <div class="tableItem" id="price">7500</div>
-            <div class="tableItem"><button class="deleteBtn">x</button></div>
+      <main>
+        <div class="tabGroup">
+          <div class="tab selected" data-tab="1">버거세트</div>
+          <div class="tab" data-tab="2">버거단품</div>
+          <div class="tab" data-tab="3">스낵&사이드</div>
+          <div class="tab" data-tab="4">음료</div>
+        </div>
+        <div class="menuContainer">
+          <div class="group show" id="setGroup" data-content="1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-
-          <div class="btnsBox">
-            <button type="button" class="orderBtn">주문하기</button>
-            <button type="button" class="resetBtn">초기화 하기</button>
+          <div class="group" id="singleGroup" data-content="2">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-        </section>
+          <div class="group" id="snackGroup" data-content="3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="group" id="beverageGroup" data-content="4">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </main>
+      <section class="orderContainer">
+        <h4 class="orderList">주문 내역</h4>
+        <div class="orderTable">
+          <div class="tableItem"><strong>메뉴</strong></div>
+          <div class="tableItem">
+            <strong>수량</strong>
+          </div>
+          <div class="tableItem"><strong>가격</strong></div>
+          <div class="tableItem"><strong>삭제</strong></div>
+          <div class="tableItem">1955버거세트</div>
+          <div class="tableItem">
+            <button class="minusBtn">-</button>
+            <div class="number">1</div>
+            <button class="plusBtn">+</button>
+          </div>
+          <div class="tableItem" id="price">7500</div>
+          <div class="tableItem"><button class="deleteBtn">x</button></div>
+        </div>
+
+        <div class="btnsBox">
+          <button type="button" class="orderBtn">주문하기</button>
+          <button type="button" class="resetBtn">초기화 하기</button>
+        </div>
+      </section>
     </div>
     <script type="text/javascript" src="./js/order.js"></script>
   </body>

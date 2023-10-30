@@ -1,15 +1,24 @@
 body {
   margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .wrapper {
-  padding: 15px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 
 .header {
   height: 60px;
   border: none;
-  margin-bottom: 20px;
+  margin: 10px;
   background-color: white;
 }
 
@@ -17,59 +26,144 @@ img {
   height: 100%;
 }
 
-.main {
+/* 탭+콘텐츠 */
+main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 10px auto;
 }
 
-.menuContainer {
-  display: grid;
-  width: 500px;
-  height: 500px;
-  grid-template-columns: repeat(3, minmax(150px, auto));
-  grid-template-rows: repeat(3, minmax(150px, auto));
-  gap: 10px;
-}
-
-.menuContainer > div {
-  border: none;
-  background-color: white;
-  border-radius: 10px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  box-shadow: 1px 1px 1px 1px gray;
+/* 탭 메뉴 */
+.tabGroup {
+  background: white;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
   cursor: pointer;
 }
 
-.menuContainer div:nth-child(1) {
+.tabGroup > div {
+  display: flex; /* 텍스트 수직 중앙 정렬을 위함 */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 0px 3px rgb(194 186 186 / 30%);
+}
+
+.tabGroup > div:hover {
+  background: #fccf29;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.selected {
+  background-color: #36494f;
+  color: white;
+}
+
+.menuContainer {
+  width: 100%;
+  box-shadow: 0px 0px 3px rgb(194 186 186 / 30%);
+}
+
+.group {
+  display: none;
+}
+
+.group.show {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(2, 220px);
+}
+
+.group > div {
+  border: none;
+  box-shadow: 0px 0px 3px rgb(194 186 186 / 30%);
+  margin: 10px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: 0 25px;
+}
+
+/* 버거세트 */
+#setGroup > div:nth-child(1) {
+  background-size: 100%;
   background-image: url('../sample_imgs/더블쿼터파운더세트_10400.jpeg');
 }
-.menuContainer div:nth-child(2) {
+#setGroup > div:nth-child(2) {
+  background-size: 100%;
   background-image: url('../sample_imgs/맥크리스피디럭스세트_9200.jpeg');
 }
-.menuContainer div:nth-child(3) {
-  background-image: url('../sample_imgs/빅백베이컨_7200.jpeg');
+#setGroup > div:nth-child(3) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/진도대파크로켓_10200.jpeg');
 }
-.menuContainer div:nth-child(4) {
-  background-image: url('../sample_imgs/빅맥베이컨_7200.jpeg');
+#setGroup > div:nth-child(4) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/트리플치즈버거라지_9200.jpeg');
 }
-.menuContainer div:nth-child(5) {
-  background-image: url('../sample_imgs/소시지스낵랩_3900.jpeg');
-}
-.menuContainer div:nth-child(6) {
-  background-image: url('../sample_imgs/슈슈버거_5900.jpeg');
-}
-.menuContainer div:nth-child(7) {
-  background-image: url('../sample_imgs/진도대파크로켓_10200.jpeg');
-}
-.menuContainer div:nth-child(8) {
-  background-image: url('../sample_imgs/트리플치즈버거라지_9200.jpeg');
-}
-.menuContainer div:nth-child(9) {
+#setGroup > div:nth-child(5) {
+  background-size: 100%;
   background-image: url('../sample_imgs/맥크리스피세트_9900.jpeg');
 }
 
+/* 버거싱글 */
+#singleGroup > div:nth-child(1) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/빅맥베이컨_7200.jpeg');
+}
+#singleGroup > div:nth-child(2) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/1955버거.png');
+}
+#singleGroup > div:nth-child(3) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/슈슈버거_5900.jpeg');
+}
+
+/* 스낵&사이드 */
+#snackGroup > div:nth-child(1) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/소시지스낵랩_3900.jpeg');
+}
+#snackGroup > div:nth-child(2) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/코울슬로_2700.jpeg');
+}
+#snackGroup > div:nth-child(3) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/골든모짜렐라치즈2조각_3300.jpeg');
+}
+#snackGroup > div:nth-child(4) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/핫케익2조각_3600.jpeg');
+}
+#snackGroup > div:nth-child(5) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/해쉬브라운_2100.jpeg');
+}
+
+/* 음료 */
+#beverageGroup > div:nth-child(1) {
+  background-size: 100%;
+  background-image: url('../sample_imgs/맥카페.png');
+}
+#beverageGroup > div:nth-child(2) {
+  background-size: 80%;
+  background-position: 25px;
+  background-image: url('../sample_imgs/맥플러리딸기.webp');
+}
+#beverageGroup > div:nth-child(3) {
+  background-size: 80%;
+  background-position: 25px;
+  background-image: url('../sample_imgs/오레오.webp');
+}
+
+/* 주문 컨테이너 */
 .orderContainer {
   box-sizing: border-box;
   background-color: white;
@@ -79,7 +173,7 @@ img {
   border: none;
   box-shadow: 1px 1px 1px 1px gray;
   padding: 20px;
-  margin: 0 50px;
+  margin: 0 20px;
 }
 
 .orderTable {
